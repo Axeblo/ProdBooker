@@ -9,10 +9,9 @@ const app = express();
 const DB_NAME = 'new_database';
 const COLLECTION_NAME = 'test_collection';
 
-//mongoose.connect("mongodb://localhost:27017/");
 mongoose.connect(process.env.MONGO_URL, {
-    user: "root",
-    pass: "example",
+    user: process.env.MONGO_USER,
+    pass: process.env.MONGO_PASS,
 });
 
 const db = mongoose.connection;
