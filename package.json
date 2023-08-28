@@ -13,6 +13,7 @@
     "express": "^4.18.2",
     "mongodb": "^5.8.0",
     "mongoose": "^7.4.4",
+    "node-oauth2-server": "^2.4.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
